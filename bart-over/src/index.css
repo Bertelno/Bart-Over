@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;  /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.navBar {
+  height: 60px;
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding:  20px; /* Padding around navbar */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items evenly horizontally */
+  align-items: center; /* Center items vertically */
+  box-shadow: 5 5 10 #000;
+}
+
+.navBar-logo {
+  font-size: 1.5rem; /* Brand/logo font size */
+  text-decoration: none; /* Remove default underline for links */
+  color: #fff; /* Brand/logo text color */
+  transition: color 0.3s ease;
+}
+
+.navBar-nav {
+  list-style-type: none; /* Remove bullet points for list items */
+  display: flex; /* Use flexbox for layout */
+
+}
+
+.navBar-nav li {
+  margin-right: 15px; /* Margin between each navbar item */
+}
+
+.navBar-nav li:last-child {
+  margin-right: 0; /* Remove margin for the last navbar item */
+}
+
+.navBar-nav a {
+  text-decoration: none; /* Remove default underline for links */
+  color: #fff; /* Navbar item text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navBar-nav a:hover {
+  color: #F88379; /* Text color on hover */
+}
+
+.navBar-logo:hover {
+  color: #F88379;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Hamburger menu styles */
+@media (max-width: 768px) {
+  .navBar-nav {
+    display: none; /* Hide the list items by default on smaller devices */
+    flex-direction: column; /* Align items vertically */
+    position: absolute;
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .navBar-nav.open {
+    display: flex; /* Display the list items when the hamburger menu is open */
+  }
+
+  .navBar-nav li {
+    margin-bottom: 10px; /* Add margin between list items */
+  }
+
+  .hamburger {
+    display: block; /* Display the hamburger icon */
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .hamburger:hover {
+    color: #F88379;
+  }
+
+}
+.card{
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0,0%,0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width:250px;
+  display: inline-block;
+
+}
+
