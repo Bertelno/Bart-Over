@@ -23,6 +23,7 @@ html, body {
   text-decoration: none; /* Remove default underline for links */
   color: #fff; /* Brand/logo text color */
   transition: color 0.3s ease;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 
 .navBar-nav {
@@ -47,10 +48,13 @@ html, body {
 
 .navBar-nav a:hover {
   color: #F88379; /* Text color on hover */
+  transform: scale(1.2); /* Increase size when hovered over */
 }
 
 .navBar-logo:hover {
   color: #F88379;
+  transform: scale(1.1); /* Increase size when hovered over */
+  
 }
 
 .hamburger {
@@ -68,6 +72,7 @@ html, body {
     width: 100%;
     background-color: #333;
     padding: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
   }
 
   .navBar-nav.open {
@@ -83,10 +88,12 @@ html, body {
     cursor: pointer;
     color: #fff;
     font-size: 1.5rem;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
   }
 
   .hamburger:hover {
     color: #F88379;
+    transform: scale(1.1); /* Increase size when hovered over */
   }
 
 }
@@ -101,11 +108,14 @@ html, body {
   display: inline-block;
   background-color: #333;
   color:#fff;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
 
 }
 
 .card:hover{
+  cursor: pointer;
   color: #F88379;
+  transform: scale(1.01); /* Increase size when hovered over */
 }
 
 .Footer{
@@ -150,8 +160,10 @@ html, body {
 .image {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .body {
-  background-color:#333;
+  background-color:#4d4d4d;
 }
