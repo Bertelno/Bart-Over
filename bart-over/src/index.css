@@ -91,14 +91,67 @@ html, body {
 
 }
 .card{
-  border: 1px solid black;
+  border: none;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px hsla(0,0%,0%, 0.1);
+  box-shadow: 5px 5px 5px hsla(0,0%,0%, 0.5);
   padding: 20px;
   margin: 10px;
   text-align: center;
   max-width:250px;
   display: inline-block;
+  background-color: #333;
+  color:#fff;
 
 }
 
+.card:hover{
+  color: #F88379;
+}
+
+.Footer{
+  height: 60px;
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding:  20px; /* Padding around navbar */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items evenly horizontally */
+  align-items: center; /* Center items vertically */
+  box-shadow: 5 5 10 #000;
+}
+
+.Footer ul {
+  list-style-type: none; /* Remove bullet points for list items */
+  display: flex; /* Use flexbox for layout */
+
+}
+
+.Footer li {
+  margin-right: 15px; /* Margin between each navbar item */
+}
+
+.Footer li:last-child {
+  margin-right: 0; /* Remove margin for the last navbar item */
+}
+
+.Footer a {
+  text-decoration: none; /* Remove default underline for links */
+  color: #fff; /* Navbar item text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.Footer a:hover {
+  color: #F88379; /* Text color on hover */
+}
+
+.Footer-logo:hover {
+  color: #F88379;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  background-color:#333;
+}
